@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./css/contact.css" />
+    <script
+  
+
+
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+   
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="./images/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            For all the enquiries, please email us using the form. 
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="./images/location.png" class="icon" alt="" />
+              <p>10 Paul Robeson Blvd</p>
+            </div>
+            <div class="information">
+              <img src="./images/email.png" class="icon" alt="" />
+              <p>One.S.Shop123@gmail.com</p>
+            </div>
+            <div class="information">
+              <img src="./images/phone.png" class="icon" alt="" />
+              <p>123-456-789</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com/home">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/feed/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="#" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" id="user_name" class="input" />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container1">
+
+              <%if (email_value == "") {%>
+                <input type="email" id="user_email" class="input1" value="Enter your Email">
+                <%} else{%>
+                <input type="email" id="user_email" class = "input1" value= <%= email_value %>>
+                <%}%>
+      
+              
+              
+              
+            </div>
+            <div class="input-container">
+              <input type="tel" id="user_phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" id = "message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" id = "send" value="Send" class="btn" >
+            <a href = "/" input type="submit"  id ="gobackhome" value="Home" class="btn"; style ="text-decoration: none;">Home</a>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/contact.js">
+        document.getElementById("gobackhome").onclick = function () {
+      location.href = "/";
+    }
+    </script>
+  </body>
+    
+</html>
